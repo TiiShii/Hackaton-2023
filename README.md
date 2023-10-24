@@ -1,7 +1,7 @@
 # Hackaton-2023
 
 Aperçu
-Le Quiz Expressions en Langues Étrangères est un jeu web interactif conçu pour aider les utilisateurs à apprendre de manière ludique des expressions familières dans différentes langues étrangères, y compris l'anglais, le japonais et le chinois. Le jeu se présente sous la forme d'un quiz où les joueurs sont confrontés à une expression dans une langue étrangère et doivent choisir la traduction correcte parmi trois propositions, dont deux sont fausses.
+Le Quiz Expressions en Langues Étrangères est un jeu web interactif conçu pour aider les utilisateurs à apprendre de manière ludique des expressions familières dans différentes langues étrangères, y compris l'anglais, le japonais et le mandarin. Le jeu se présente sous la forme d'un quiz où les joueurs sont confrontés à une expression dans une langue étrangère et doivent choisir la traduction correcte parmi trois propositions, dont deux sont fausses.
 
 Fonctionnalités
 Quiz Expressions : Les utilisateurs sont présentés avec des expressions familières dans différentes langues.
