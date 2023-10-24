@@ -2,6 +2,7 @@
     git clone URL_du_depot
 - Une fois la commande git clone exécutée avec succès, le dépôt distant sera cloné sur votre ordinateur. 
 
+
 # Push :
 ## S'assurer d'être sur la bonne branche : 
     git checkout nom-de-la-branche
