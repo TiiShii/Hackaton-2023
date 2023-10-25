@@ -185,13 +185,13 @@ p {
   margin: 0;
   line-height: 30px;
   padding: 11px 25px 11px;
-  color: #1dc5ce;
+  color: #f862b2;
   font-weight: 400;
   font-size: 16px;
   text-align: center;
   text-transform: capitalize;
   background: none;
-  border: 1px solid #1dc5ce;
+  border: 1px solid #f862b2;
   border-radius: 6px;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -230,9 +230,9 @@ p {
 }
 
 .btn-style-one:hover {
-  color: #ffffff;
-  background: #1dc5ce;
-  border-color: #1dc5ce;
+  color: white;
+  background: #f862b2;
+  border-color: #f862b2;
 }
 
 .btn-style-two {
@@ -242,13 +242,13 @@ p {
   font-family: "Poppins", sans-serif;
   line-height: 30px;
   padding: 11px 25px 11px;
-  color: #ffffff;
+  color: white;
   font-weight: 400;
   font-size: 16px;
   text-align: center;
   text-transform: capitalize;
-  background: #1dc5ce;
-  border: 1px solid #1dc5ce;
+  background: #f862b2;
+  border: 1px solid #f862b2;
   border-radius: 6px;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -289,9 +289,9 @@ p {
 }
 
 .btn-style-two:hover {
-  color: #1dc5ce;
+  color: #f862b2;
   background: none;
-  border-color: #1dc5ce;
+  border-color: #f862b2;
 }
 
 .btn-style-two i img {
@@ -315,7 +315,7 @@ p {
 }
 
 .theme_color {
-  color: #1dc5ce;
+  color: #f862b2;
 }
 
 .light-font {
