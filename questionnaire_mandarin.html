@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Dualetsgo</title>
+</head>
+<body>
+    <div id="qst1">
+        <p>Que signifie 天菜 — <i>tiān cài</i> — (légume du ciel)?</p>
+        <ul>
+            <li><input type="radio" name="reponse" onclick="qstSuivante(this)">Etoile brillante</li>
+            <li><input type="radio" name="reponse" onclick="qstSuivante(this)">C'est mon type d'homme/de femme</li>
+            <li><input type="radio" name="reponse" onclick="qstSuivante(this)">C'est un plat chinois</li>
+        </ul>
+    </div>
+    <div id="qst2" style="display: none;">
+        <p>Que signifie 芭比Q了 — <i>bā bǐ Q le</i> — (BBQ)?</p>
+        <ul>
+            <li><input type="radio" name="reponse" onclick="qstSuivante(this)">C'est mort"</li>
+            <li><input type="radio" name="reponse" onclick="qstSuivante(this)">Coucher de solei</li>
+            <li><input type="radio" name="reponse" onclick="qstSuivante(this)">C'est une fête en plein air</li>
+        </ul>
+    </div>
+    <div id="qst3" style="display: none;">
+        <p>Que signifie 自肥 — <i>zì féi</i> — (s'engraisser)?</p>
+        <ul>
+            <li><input type="radio" name="reponse" onclick="qstSuivante(this)">Améliorer ses compétences artistiques</li>
+            <li><input type="radio" name="reponse" onclick="qstSuivante(this)">Chercher à s'enrichir personnellement</li>
+            <li><input type="radio" name="reponse" onclick="qstSuivante(this)">Se lancer dans une carrière personnelle</li>
+        </ul>
+    </div>
+    <div id="qst4" style="display: none;">
+        <p>Que signifie 吃瓜群眾 — <i>chī guā qún zhòng</i> — (le groupe de personnes qui mange des concombres)?</p>
+        <ul>
+            <li><input type="radio" name="reponse" onclick="score_final(this)">C'est un groupe de personnes qui surveillent les potins en ligne</li>
+            <li><input type="radio" name="reponse" onclick="score_final(this)">C'est un groupe de personnes qui explorent des endroits mystérieux</li>
+            <li><input type="radio" name="reponse" onclick="score_final(this)">C'est un groupe de personnes qui cultivent des légumes rares</li>
+        </ul>
+    </div>
+
+    <!--
+        affichage des résultats du quiz, y compris le score de l'utilisateur et la liste des questions auxquelles l'utilisateur a répondu, ainsi que les réponses choisies. L'affichage des résultats sera géré par JavaScript une fois que toutes les questions auront été répondues.
+    -->
+    <div id="result-container" style="display: none;">
+        <h2>Résultats</h2>
+        <p>Score : <span id="score">0</span></p>
+        <ul id="questions-list">
+            <!-- Les questions et réponses de l'utilisateur seront ajoutées ici -->
+        </ul>
+    </div>
+
+    <script>
+        let score = 0;
+        let qstDuMoment = 1;
+
+        /**
+         * Tableau d'objets avec les questions et leur bonne réponse
+        **/
+        const questions = [
+            {
+                question: "Que signifie 天菜 — <i>tiān cài</i> — (légume du ciel)?",
+                choix: [
+                    {text: "Etoile brillante", correct: false},
+                    {text: "C'est mon type d'homme/de femme", correct: true},
+                    {text: "C'est un plat chinois", correct: false},
+                ]
+            },
+            {
+                question: "Que signifie 芭比Q了 — <i>bā bǐ Q le</i> — (BBQ)?",
+                choix: [
+                    {text: "C'est mort", correct: true},
+                    {text: "Coucher de solei", correct: false},
+                    {text: "C'est une fête en plein air", correct: false},
+                ]
+            },
+            {
+                question: "Que signifie 自肥 — <i>zì féi</i> — (s'engraisser)?",
+                choix: [
+                    {text: "Améliorer ses compétences artistiques", correct: false},
+                    {text: "Chercher à s'enrichir personnellement", correct: true},
+                    {text: "Se lancer dans une carrière personnelle", correct: false},
+                ]
+            },
+            {
+                question: "Que signifie 吃瓜群眾 — <i>chī guā qún zhòng</i> — (le groupe de personnes qui mange des concombres)?",
+                choix: [
+                    {text: "C'est un groupe de personnes qui surveillent les potins en ligne", correct: true},
+                    {text: "C'est un groupe de personnes qui explorent des endroits mystérieux", correct: false},
+                    {text: "C'est un groupe de personnes qui cultivent des légumes rares", correct: false},
+                ]
+            },
+        ];
+
+        const reponsesDeUtilisateur = [];
+
+        function qstSuivante(repChoisie) {
+            
+        }
+    </script>
+</body>
+</html>
