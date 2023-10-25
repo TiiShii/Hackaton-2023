@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
     <title>Dualetsgo</title>
 </head>
+
 <body>
     <div id="qst1">
         <p>Que signifie 天菜 — <i>tiān cài</i> — (légume du ciel)?</p>
@@ -26,78 +28,167 @@
     <div id="qst3" style="display: none;">
         <p>Que signifie 自肥 — <i>zì féi</i> — (s'engraisser)?</p>
         <ul>
-            <li><input type="radio" name="reponse" onclick="qstSuivante(this)">Améliorer ses compétences artistiques</li>
-            <li><input type="radio" name="reponse" onclick="qstSuivante(this)">Chercher à s'enrichir personnellement</li>
-            <li><input type="radio" name="reponse" onclick="qstSuivante(this)">Se lancer dans une carrière personnelle</li>
+            <li><input type="radio" name="reponse" onclick="qstSuivante(this)">Améliorer ses compétences artistiques
+            </li>
+            <li><input type="radio" name="reponse" onclick="qstSuivante(this)">Chercher à s'enrichir personnellement
+            </li>
+            <li><input type="radio" name="reponse" onclick="qstSuivante(this)">Se lancer dans une carrière personnelle
+            </li>
         </ul>
     </div>
     <div id="qst4" style="display: none;">
         <p>Que signifie 吃瓜群眾 — <i>chī guā qún zhòng</i> — (le groupe de personnes qui mange des concombres)?</p>
         <ul>
-            <li><input type="radio" name="reponse" onclick="score_final(this)">C'est un groupe de personnes qui surveillent les potins en ligne</li>
-            <li><input type="radio" name="reponse" onclick="score_final(this)">C'est un groupe de personnes qui explorent des endroits mystérieux</li>
-            <li><input type="radio" name="reponse" onclick="score_final(this)">C'est un groupe de personnes qui cultivent des légumes rares</li>
+            <li><input type="radio" name="reponse" onclick="score_final(this)">C'est un groupe de personnes qui
+                surveillent les potins en ligne</li>
+            <li><input type="radio" name="reponse" onclick="score_final(this)">C'est un groupe de personnes qui
+                explorent des endroits mystérieux</li>
+            <li><input type="radio" name="reponse" onclick="score_final(this)">C'est un groupe de personnes qui
+                cultivent des légumes rares</li>
         </ul>
     </div>
 
     <!--
         affichage des résultats du quiz, y compris le score de l'utilisateur et la liste des questions auxquelles l'utilisateur a répondu, ainsi que les réponses choisies. L'affichage des résultats sera géré par JavaScript une fois que toutes les questions auront été répondues.
     -->
-    <div id="result-container" style="display: none;">
+    <div id="resultat-container" style="display: none;">
         <h2>Résultats</h2>
         <p>Score : <span id="score">0</span></p>
         <ul id="questions-list">
-            <!-- Les questions et réponses de l'utilisateur seront ajoutées ici -->
+            <li>
+                <p><strong>Question 1:</strong> Que signifie 天菜 — <i>tiān cài</i> — (légume du ciel)?</p>
+                <p><strong>Réponse de l'utilisateur:</strong><span id="rep1"></span></p>
+                <p><strong>Réponse correcte:</strong> "C'est mon type d'homme/de femme"</p>
+                <p><strong>D'où vient cette expression?</strong> C'est un terme populaire sur internet qui est
+                    généralement utilisé pour mettre l'accent sur le fait qu'une personne est extrêmement attirante, que
+                    ce soit en termes d'apparence ou de personnalité, et qu'elle suscite des sentiments positifs chez
+                    les autres. Cette expression est couramment utilisée à Taïwan mais elle n'est pas très répendue en
+                    Chine continentale.</p>
+            </li>
+            <li>
+                <p><strong>Question 2:</strong> Que signifie 芭比Q了 — <i>bā bǐ Q le</i> — (BBQ)?</p>
+                <p><strong>Réponse de l'utilisateur:</strong> <span id="rep2"></span></p>
+                <p><strong>Réponse correcte:</strong> "C'est mort"</p>
+                <p><strong>D'où vient cette expression?</strong> Ce terme est en réalité une extension du terme "BBQ"
+                    (barbecue) qui évolue pour signifier "incinération" ou "se consume" dans un sens plus large. Il est
+                    également utilisé pour exprimer des sentiments tels que "c'est fini", "c'est foutu" ou "c'est la
+                    catastrophe". L'origine de cette expression remonte à un streamer de jeux vidéo mandarin. À
+                    l'époque, il était sur le point de perdre une partie et a laissé échapper accidentellement la phrase
+                    ce terme, tout en utilisant un effet vocal électronique distinctif. Cette réaction inattendue a été
+                    détournée en meme et a fini par devenir une expression populaire.</p>
+            </li>
+            <li>
+                <p><strong>Question 3:</strong> Que signifie 自肥 — <i>zì féi</i> — (s'engraisser)?</p>
+                <p><strong>Réponse de l'utilisateur:</strong> <span id="rep3"></span></p>
+                <p><strong>Réponse correcte:</strong> "C'est mort"</p>
+                <p><strong>D'où vient cette expression?</strong> Ce terme avait initialement une connotation négative,
+                    se référant à l'action de chercher à s'enrichir personnellement en utilisant des ressources ou des
+                    opportunités pour des gains personnels. Cependant, ce terme a évolué au fil du temps pour prendre
+                    une signification plus large en raison de son utilisation dans des émissions de télévision tel
+                    qu'ERROR dont les membres ont utilisé le terme pour décrire le fait d'utiliser les ressources de
+                    l'entreprise pour produire des émissions et satisfaire leurs propres désirs, parfois au détriment de
+                    l'objectif initial de l'entreprise.</p>
+            </li>
+            <li>
+                <p><strong>Question 4:</strong> Que signifie 吃瓜群眾 — <i>chī guā qún zhòng</i> — (le groupe de personnes
+                    qui mangent des concombres)?</p>
+                <p><strong>Réponse de l'utilisateur:</strong> <span id="rep4"></span></p>
+                <p><strong>Réponse correcte:</strong> C'est un groupe de personnes qui surveillent les potins en ligne
+                </p>
+                <p><strong>D'où vient cette expression?</strong> Ce terme décrit l'acte de se rassembler sur Internet
+                    pour observer ou écouter des potins, en particulier concernant des événements sensationnels ou des
+                    potins populaires. C'est une expression courante utilisée pour décrire la participation à la
+                    surveillance de potins ou de drames en ligne, souvent avec un ton humoristique."</p>
+            </li>
         </ul>
     </div>
 
     <script>
-        let score = 0;
-        let qstDuMoment = 1;
-
+        
         /**
          * Tableau d'objets avec les questions et leur bonne réponse
-        **/
+         **/
         const questions = [
             {
                 question: "Que signifie 天菜 — <i>tiān cài</i> — (légume du ciel)?",
                 choix: [
-                    {text: "Etoile brillante", correct: false},
-                    {text: "C'est mon type d'homme/de femme", correct: true},
-                    {text: "C'est un plat chinois", correct: false},
+                    { text: "Etoile brillante", correct: false },
+                    { text: "C'est mon type d'homme/de femme", correct: true },
+                    { text: "C'est un plat chinois", correct: false },
                 ]
             },
             {
                 question: "Que signifie 芭比Q了 — <i>bā bǐ Q le</i> — (BBQ)?",
                 choix: [
-                    {text: "C'est mort", correct: true},
-                    {text: "Coucher de solei", correct: false},
-                    {text: "C'est une fête en plein air", correct: false},
+                    { text: "C'est mort", correct: true },
+                    { text: "Coucher de solei", correct: false },
+                    { text: "C'est une fête en plein air", correct: false },
                 ]
             },
             {
                 question: "Que signifie 自肥 — <i>zì féi</i> — (s'engraisser)?",
                 choix: [
-                    {text: "Améliorer ses compétences artistiques", correct: false},
-                    {text: "Chercher à s'enrichir personnellement", correct: true},
-                    {text: "Se lancer dans une carrière personnelle", correct: false},
+                    { text: "Améliorer ses compétences artistiques", correct: false },
+                    { text: "Chercher à s'enrichir personnellement", correct: true },
+                    { text: "Se lancer dans une carrière personnelle", correct: false },
                 ]
             },
             {
                 question: "Que signifie 吃瓜群眾 — <i>chī guā qún zhòng</i> — (le groupe de personnes qui mange des concombres)?",
                 choix: [
-                    {text: "C'est un groupe de personnes qui surveillent les potins en ligne", correct: true},
-                    {text: "C'est un groupe de personnes qui explorent des endroits mystérieux", correct: false},
-                    {text: "C'est un groupe de personnes qui cultivent des légumes rares", correct: false},
+                    { text: "C'est un groupe de personnes qui surveillent les potins en ligne", correct: true },
+                    { text: "C'est un groupe de personnes qui explorent des endroits mystérieux", correct: false },
+                    { text: "C'est un groupe de personnes qui cultivent des légumes rares", correct: false },
                 ]
             },
         ];
-
+        
         const reponsesDeUtilisateur = [];
-
-        function qstSuivante(repChoisie) {
+        let qstDuMoment = 1;
+        
+        function qstSuivante(questionNumber) {
+            // chopper la réponse de l'utilisateur depuis l'input
+            const repUser = document.getElementById(`reponse${questionNumber}`).value;
+            const qstDuMomentData = questions[qstDuMoment - 1];
             
+            // push réponse de l'utilisateur au tableau
+            reponsesDeUtilisateur.push(repUser);
+
+            // màj de la réponse de l'utilisateur dans la liste des résultats
+            document.getElementById(`rep${questionNumber}`).textContent = repUser;
+            
+            // cache la rep pour passer à la suivante
+            document.getElementById(`qst${qstDuMoment}`).style.display = "none";
+            qstDuMoment++;
+            
+            if (qstDuMoment <= questions.length) {
+                // Affichez la question suivante
+                qstDuMomentData = questions[qstDuMoment - 1];
+                document.getElementById(`qst${qstDuMoment}`).style.display = "block";
+            } else {
+                // Toutes les questions ont été répondues, affichez les résultats
+                montrerLeScore();
+            }
+        }
+        
+
+        let score = 0;
+
+        // quand l'utilisateur rep à la derniere qst j'affiche les résultats
+        function montrerLeScore() {
+            document.getElementById("qst1").style.display = "none";
+            document.getElementById("qst2").style.display = "none";
+            document.getElementById("qst3").style.display = "none";
+            document.getElementById("qst4").style.display = "none";
+
+            for (let i = 0; i < questions.length; i++) {
+                const question = questions[i];
+                
+            }
+
+            document.getElementById("resultat-container").style.display = "block";
         }
     </script>
 </body>
+
 </html>
