@@ -174,12 +174,16 @@ function showResults() {
         resultContainer.innerHTML += `
             <button onclick="returnToMenu()">Retourner au Menu</button>
         `;
+
     }
 
     resultContainer.style.display = "block";
 }
 
-
+// Fonction pour retourner au menu (index.html)
+function returnToMenu() {
+    window.location.href = "index.html";
+}
 
 // Fonction pour afficher/masquer les explications
 function toggleExplanations(explanationElement) {
