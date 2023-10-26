@@ -43,7 +43,7 @@ a {
   position: relative;
   text-decoration: none;
   cursor: pointer;
-  color: black;
+  color: #ffffff;
   -webkit-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
@@ -82,7 +82,7 @@ h6 {
   font-weight: 400;
   margin: 0 0 15px;
   background: none;
-  color: #03030f;
+  color: #ffffff;
   line-height: 1.33em;
 }
 
@@ -92,7 +92,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #03030f;
+  color: #ffffff;
 }
 
 h1 {
