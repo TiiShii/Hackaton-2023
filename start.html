@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changement d'image</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #image-container {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <img id="clickable-image" src="image1.png" alt="Image 1">
+    </div>
+    <script>
+        const imageContainer = document.getElementById('image-container');
+        const clickableImage = document.getElementById('clickable-image');
+
+        imageContainer.addEventListener('click', () => {
+            // Change the image source when clicked
+            if (clickableImage.src.endsWith('image1.png')) {
+                clickableImage.src = 'image2.png';
+            } else {
+                clickableImage.src = 'image1.png';
+            }
+        });
+
+        imageContainer.addEventListener('click', () => {
+            // Navigate to another page (change 'destination.html' to the actual page name)
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

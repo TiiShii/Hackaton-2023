@@ -77,6 +77,7 @@ let score = 0; // Score du joueur
 let incorrectAnswers = []; // Tableau pour stocker les réponses incorrectes
 let correctAnswers = []; // Tableau pour stocker les bonnes réponses
 let showExplanations = true;
+let hasAchievedPerfectScore = false;
 
 
 // Sélection des éléments HTML
@@ -115,10 +116,9 @@ function showResults() {
     questionContainer.innerHTML = "";
     resultContainer.innerHTML = "";
 
-    // Vérifie si l'utilisateur n'a pas obtenu un score parfait
     if (score !== questions.length) {
         // Affiche un message en haut pour indiquer que toutes les réponses ne sont pas correctes
-        resultContainer.innerHTML += "<h2>Dommage, tu n'as pas tout répondu correctement...</h2>";
+        resultContainer.innerHTML += "<h2>Vous n'avez pas obtenu un score parfait</h2>";
 
         if (incorrectAnswers.length > 0) {
             // Affiche les questions avec réponses incorrectes et explications
@@ -139,23 +139,32 @@ function showResults() {
 
         // Bouton pour recommencer le quiz
         resultContainer.innerHTML += `
-        <button onclick="restartQuiz()">Recommencer</button>
-    `;
+            <button onclick="restartQuiz()">Recommencer</button>
+        `;
     } else {
         // Si l'utilisateur a obtenu un score parfait
-        resultContainer.innerHTML += "<h2>Super! Tu as obtenu le score max! !</h2>";
+        resultContainer.innerHTML += "<h2>Félicitations ! Vous avez obtenu un score parfait !</h2>";
+
+        // Si c'est la première fois qu'ils obtiennent un score parfait après avoir recommencé, affiche un message spécial
+        if (!hasAchievedPerfectScore) {
+            resultContainer.innerHTML += "<p>Cette fois c'était la bonne !</p>";
+            hasAchievedPerfectScore = true;
+        }
 
         // Bouton pour retourner au menu
         resultContainer.innerHTML += `
-        <button onclick="returnToMenu()">Retourner au Menu</button>
-    `;
+            <button onclick="returnToMenu()">Retourner au Menu</button>
+        `;
 
     }
 
     resultContainer.style.display = "block";
 }
 
-
+// Fonction pour retourner au menu (index.html)
+function returnToMenu() {
+    window.location.href = "index.html";
+}
 
 // Fonction pour afficher/masquer les explications
 function toggleExplanations(explanationElement) {

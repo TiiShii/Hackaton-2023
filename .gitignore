@@ -1,0 +1,30 @@
+# Dossiers et fichiers générés automatiquement
+/node_modules
+/.vscode
+/.idea
+
+# Fichiers de build ou de compilation
+/dist
+/build
+/out
+
+# Fichiers de logs et de cache
+/logs
+/.cache
+
+# Fichiers d'environnement (par exemple, pour les variables d'environnement)
+.env
+.env.local
+
+# Fichiers de sauvegarde automatique
+*.bak
+*.swp
+
+# Fichiers de configuration utilisateur
+.editorconfig
+.vscode/settings.json
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
