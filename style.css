@@ -193,13 +193,13 @@ p {
   margin: 0;
   line-height: 30px;
   padding: 11px 25px 11px;
-  color: #f862b2;
+  color: #ff3b94;
   font-weight: 400;
   font-size: 16px;
   text-align: center;
   text-transform: capitalize;
   background: none;
-  border: 1px solid #f862b2;
+  border: 1px solid #ff3b94;
   border-radius: 6px;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -239,8 +239,8 @@ p {
 
 .btn-style-one:hover {
   color: white;
-  background: #f862b2;
-  border-color: #f862b2;
+  background: #ff3b94;
+  border-color: #ff3b94;
 }
 
 .btn-style-two {
@@ -255,8 +255,8 @@ p {
   font-size: 16px;
   text-align: center;
   text-transform: capitalize;
-  background: #f862b2;
-  border: 1px solid #f862b2;
+  background: #ff3b94;
+  border: 1px solid #ff3b94;
   border-radius: 6px;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -323,7 +323,7 @@ p {
 }
 
 .theme_color {
-  color: #f862b2;
+  color: #ff3b94;
 }
 
 .light-font {
