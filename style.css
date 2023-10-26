@@ -10,7 +10,7 @@ body {
 .background {
   background-color: rgba(37, 37, 37, 0.5);
   width: 40%;
-  height: 470px;
+  height: 475px;
   margin: 0 auto;
   padding: 50px;
 }
@@ -297,9 +297,9 @@ p {
 }
 
 .btn-style-two:hover {
-  color: #f862b2;
+  color: #ffffff;
   background: none;
-  border-color: #f862b2;
+  border-color: #ffffff;
 }
 
 .btn-style-two i img {
