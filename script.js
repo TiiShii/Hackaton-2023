@@ -86,12 +86,13 @@ const resultContainer = document.getElementById("result-container");
 
 // Fonction pour afficher la question en cours
 function showQuestion() {
-if (currentQuestion < questions.length) {
-    // Obtention des données de la question actuelle
-    const questionData = questions[currentQuestion];
-    const choices = questionData.choices.map((choice, index) => {
-        return `<label><input type="radio" name="reponse" value="${choice.text}"> ${choice.text}</label>`;
-    });
+    if (currentQuestion < questions.length) {
+        // Obtention des données de la question actuelle
+        const questionData = questions[currentQuestion];
+        const choices = questionData.choices.map((choice, index) => {
+            return `<label class="theme-btn btn-style-two"><input type="radio" name="reponse" value="${choice.text}"> ${choice.text}</label>`;
+        });
+
 
     // Affichage de la question et des choix possibles
     questionContainer.innerHTML = `
