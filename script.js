@@ -165,16 +165,12 @@ function showResults() {
         `;
     } else {
         // Si l'utilisateur a obtenu un score parfait
-        resultContainer.innerHTML +=
-            "<h2>Félicitations ! Vous avez obtenu un score parfait !</h2>";
-        // Si c'est la première fois qu'ils obtiennent un score parfait après avoir recommencé, affiche un message spécial
-        if (!hasAchievedPerfectScore) {
-            resultContainer.innerHTML += "<p>Cette fois c'était la bonne !</p>";
-            hasAchievedPerfectScore = true;
-        }
-        // Bouton pour retourner au menu
         resultContainer.innerHTML += `
-            <button onclick="returnToMenu()">Retourner au Menu</button>
+        <div class="background" style="text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h3>Félicitations ! Vous avez obtenu un score parfait !</h3>
+            ${!hasAchievedPerfectScore ? "<p>Cette fois c'était la bonne !</p>" : ""}
+            <button onclick="returnToMenu()" class="theme-btn btn-style-two">Retourner au menu</button>
+        </div>
         `;
     }
 
