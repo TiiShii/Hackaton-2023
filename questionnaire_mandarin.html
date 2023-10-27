@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Hackaton-2023/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Dualetsgo</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <div class="main-box clearfix">
+        <!-- Logo -->
+        <div class="logo-box">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./assets/img/logoWhite.png" alt="Logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
     <div id="question-container"></div>
-    <div id="result-container" style="display: flex; justify-content: center; align-items: center; text-align: center; min-height: 100vh; flex-direction: column;"></div>
-    <div id="explanations-container" style="display: none;">
-        <h3>Explications des réponses incorrectes :</h3>
-        <ul id="explanations-list"></ul>
+    <div
+      id="result-container"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+        flex-direction: column;
+      "
+    ></div>
+    <div id="explanations-container" style="display: none">
+      <h3>Explications des réponses incorrectes :</h3>
+      <ul id="explanations-list"></ul>
     </div>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
