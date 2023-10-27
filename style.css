@@ -16,15 +16,6 @@ body {
   border-radius: 40px 40px 0px 0px;
 }
 
-.background {
-  background-color: rgba(194, 124, 172, 0.3);
-  width: 40%;
-  height: 50rem;
-  margin: 0 auto;
-  padding: 50px;
-  border-radius: 40px 40px 0px 0px;
-}
-
 #question-container .background {
   background-color: rgba(194, 124, 172, 0.3);
   width: 40%;
