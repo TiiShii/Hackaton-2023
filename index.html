@@ -1,32 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil</title>
     <!-- Stylesheets-->
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="main-box clearfix">
+        <!-- Logo -->
+        <div class="logo-box">
+          <div class="logo">
+            <a href="#">
+              <img src="logo.jpg" alt="Logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="wrapper">
       <section class="dest-section">
         <div class="auto-container">
-          <div class="title-box centered">
-            <h3><span>Sélectionne une langue</span></h3>
-          </div>
-          <div class="form-group col-lg-12 col-md-12 col-sm-12">
-            <button type="submit" class="theme-btn btn-style-two">
-              <span>Anglais</span>
-            </button>
-            <form action="questionnaire_mandarin.html">
+          <div class="background">
+            <div class="title-box centered">
+              <h3><span>Sélectionne une langue</span></h3>
+            </div>
+            <div class="form-group col-lg-12 col-md-12 col-sm-12">
               <button type="submit" class="theme-btn btn-style-two">
-                <span>Mandarin</span>
+                <span>Anglais</span>
               </button>
-            </form>
-            <button type="submit" class="theme-btn btn-style-two">
-              <span>Japonais</span>
-            </button>
+              <form action="questionnaire_mandarin.html">
+                <button type="submit" class="theme-btn btn-style-two">
+                  <span>Mandarin</span>
+                </button>
+              </form>
+              <button type="submit" class="theme-btn btn-style-two">
+                <span>Japonais</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -36,7 +50,7 @@
         <nav class="main-menu">
           <ul class="navigation clearfix">
             <li>
-              <a href="#" style="font-size: smaller"
+              <a href="about.html" style="font-size: 1.2rem; color: white"
                 >Mais qui sont ces gens qui ont créé ce magnifique site?</a
               >
             </li>
