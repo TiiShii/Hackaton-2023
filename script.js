@@ -81,8 +81,8 @@ const questions = [
 
 const questionGifs = {
     question1: "assets/img/gifdeslegumes.gif",
-    question2: "assets/img/OilBaby.gif",
-    // question3: "chemin/vers/question3.gif",
+    question2: "assets/img/bbq.gif",
+    question3: "assets/img/OilBaby.gif",
     // question4: "chemin/vers/question4.gif",
 };
 // Initialisation des variables pour suivre l'état du quiz
