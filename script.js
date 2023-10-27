@@ -81,10 +81,9 @@ const questions = [
 
 const questionGifs = {
     question1: "assets/img/gifdeslegumes.gif",
-    // question2: "chemin/vers/question2.gif",
+    question2: "assets/img/OilBaby.gif",
     // question3: "chemin/vers/question3.gif",
     // question4: "chemin/vers/question4.gif",
-    // Assurez-vous d'ajouter une entrée pour chaque question
 };
 // Initialisation des variables pour suivre l'état du quiz
 let currentQuestion = 0; // Index de la question en cours
