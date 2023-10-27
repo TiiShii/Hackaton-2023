@@ -81,6 +81,7 @@ const resultContainer = document.getElementById("result-container");
 // Fonction pour afficher la question en cours
 function showQuestion() {
     if (currentQuestion < questions.length) {
+        questionContainer.classList.add("question-container");
         // Obtention des données de la question actuelle
         const questionData = questions[currentQuestion];
         const choices = questionData.choices.map((choice, index) => {
@@ -88,8 +89,10 @@ function showQuestion() {
         });
         // Affichage de la question et des choix possibles
         questionContainer.innerHTML = `
-        <p>${questionData.question}</p>
-        <form>${choices.join("<br>")}</form>
+        <div id="question-container" style="min-height: 100vh; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p>${questionData.question}</p>
+            <form>${choices.join("<br>")}</form>
+        </div>
     `;
         // Écoute des changements de sélection de réponse
         const answerInputs = document.querySelectorAll('input[name="reponse"]');
@@ -99,9 +102,12 @@ function showQuestion() {
     } else {
         // Toutes les questions ont été répondues, affiche les résultats
         showResults();
+
+        // Après avoir affiché les résultats et recommencer,je supprime la classe CSS pour réinitialiser les styles.
+        questionContainer.classList.remove("question-container");
     }
 }
-/// Fonction pour afficher les résultats du quiz
+// Fonction pour afficher les résultats du quiz
 function showResults() {
     questionContainer.style.display = "none";
     resultContainer.innerHTML = "";
@@ -115,7 +121,7 @@ function showResults() {
                 const explanationId = `explanation-${questionIndex}`;
                 resultContainer.innerHTML += `
                     <p>${questionIndex}. ${incorrect.question}</p>
-                    <button onclick="toggleExplanations(document.getElementById('${explanationId}'))">Révéler les réponses</button>
+                    <button onclick="toggleExplanations(document.getElementById('${explanationId}'))" class="theme-btn btn-style-two">Révéler les réponses</button>
                     <div id="${explanationId}" class="explanation" style="display: none">
                         <p>Votre réponse : ${incorrect.userAnswer}</p>
                         <p>Réponse correcte : ${incorrect.correctAnswer}</p>
@@ -126,7 +132,7 @@ function showResults() {
         }
         // Bouton pour recommencer le quiz
         resultContainer.innerHTML += `
-            <button onclick="restartQuiz()">Recommencer</button>
+            <br><br><button onclick="restartQuiz()" class="theme-btn btn-style-two">Recommencer</button>
         `;
     } else {
         // Si l'utilisateur a obtenu un score parfait
@@ -199,17 +205,20 @@ function submitAnswer() {
 }
 // Fonction pour recommencer le quiz
 function restartQuiz() {
-    showQuestion();
-    
     currentQuestion = 0;
     score = 0;
     incorrectAnswers = [];
     correctAnswers = [];
+
+    questionContainer.style.display = "block";
     resultContainer.style.display = "none";
+
     const explanations = document.querySelectorAll(".explanation");
     explanations.forEach(explanation => {
         explanation.remove();
     });
+
+    showQuestion();
 }
 
 // Affiche la première question au chargement de la page
