@@ -508,6 +508,7 @@ input[type="radio"] {
   padding: 20px;
   text-align: center;
   position: relative;
+  padding-bottom: 5%;
 }
 
 #question-container form label {
