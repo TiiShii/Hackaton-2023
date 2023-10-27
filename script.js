@@ -83,7 +83,7 @@ const questionGifs = {
     question1: "assets/img/gifdeslegumes.gif",
     question2: "assets/img/bbq.gif",
     question3: "assets/img/OilBaby.gif",
-    // question4: "chemin/vers/question4.gif",
+    question4: "assets/img/concombre.png",
 };
 // Initialisation des variables pour suivre l'état du quiz
 let currentQuestion = 0; // Index de la question en cours
