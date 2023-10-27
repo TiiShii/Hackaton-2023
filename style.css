@@ -493,11 +493,13 @@ input[type="radio"] {
 
 .background {
   background-color: rgba(194, 124, 172, 0.3);
-  width: 40%;
-  margin: 0 auto;
-  padding: 50px;
+  width: 100%;
+  padding: 50px 0;
   border-radius: 40px 40px 0px 0px;
-  height: auto;
+  position: fixed;
+  bottom: 50;
+  left: 0;
+  right: 0;
 }
 
 #question-container {
@@ -507,8 +509,9 @@ input[type="radio"] {
   align-items: center;
   width: 70%;
   margin: 0 auto;
-  padding: 0;
+  padding: 20px;
   text-align: center;
+  position: relative;
 }
 
 #question-container form label {

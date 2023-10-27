@@ -110,7 +110,7 @@ function showQuestion() {
         });
         // Affichage de la question et des choix possibles
         questionContainer.innerHTML = `
-        <div id="question-container" class="background" style="min-height: 100vh; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div id="question-container" class="background" style="text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
             <h4>${questionData.question}</h4><br>
             <div class="question-and-choices">
                 <div class="choices">
@@ -142,7 +142,7 @@ function showResults() {
     if (score !== questions.length) {
         // Affiche un message en haut pour indiquer que toutes les réponses ne sont pas correctes
         resultContainer.innerHTML +=
-            "<h2>Vous n'avez pas obtenu un score parfait</h2>";
+            "<h3>Vous n'avez pas obtenu un score parfait</h3>";
         if (incorrectAnswers.length > 0) {
             // Affiche les questions avec réponses incorrectes et explications
             incorrectAnswers.forEach((incorrect, index) => {
